@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-            main();
+            loginIn();
         } catch (LoginIsNullException e) {
             System.out.println("Поле логина пустое");
         } catch (IlligallFormatException e) {
@@ -14,7 +14,7 @@ public class Main {
 
     }
 
-    private static void main() throws LoginIsNullException, IlligallFormatException {
+    private static void loginIn() throws LoginIsNullException, IlligallFormatException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите логин");
         String login = scanner.nextLine();
